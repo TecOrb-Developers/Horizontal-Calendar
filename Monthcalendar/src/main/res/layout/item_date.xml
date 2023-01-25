@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:id="@+id/llDate"
+            android:layout_width="110dp"
+            android:layout_height="160dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:background="@drawable/bg_red">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="30"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-medium"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@android:color/white">
+            </View>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Fri"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
