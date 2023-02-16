@@ -24,7 +24,7 @@ dependencies {
 ```
 
 
-Step 3 .
+Step 3 .Create array list  to save dates
 
 ~~~
    var  resultBeanList:ArrayList() = DateFormatter.horizontalCalender(30)
